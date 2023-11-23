@@ -12,20 +12,25 @@ class Server extends Controller {
     public static function url(App $object, $response=null): object
     {
         $result = [];
-        foreach($response as $nr => $record){
-            if(
-                is_array($record) &&
-                array_key_exists('name', $record) &&
-                array_key_exists('options', $record)
-            ){
-                $result[$record['name']] = $record['options'];
-            }
-            elseif(
-                is_object($record) &&
-                property_exists($record, 'name') &&
-                property_exists($record, 'options')
-            ){
-                $result[$record->name] = $record->options;
+        if(
+            !empty($response) &&
+            is_array($response)
+        ){
+            foreach($response as $nr => $record){
+                if(
+                    is_array($record) &&
+                    array_key_exists('name', $record) &&
+                    array_key_exists('options', $record)
+                ){
+                    $result[$record['name']] = $record['options'];
+                }
+                elseif(
+                    is_object($record) &&
+                    property_exists($record, 'name') &&
+                    property_exists($record, 'options')
+                ){
+                    $result[$record->name] = $record->options;
+                }
             }
         }
         return (object) $result;
