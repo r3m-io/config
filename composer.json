@@ -1,8 +1,8 @@
 {
-    "name" : "r3m_io/event",
-    "description" : "r3m_io/event see https://r3m.io for detailed usage",
+    "name" : "r3m_io/config",
+    "description" : "r3m_io/config see https://r3m.io for detailed usage",
     "type" : "library",
-    "keywords" : ["node", "r3m", "library", "framework", "event", "r3m.io"],
+    "keywords" : ["node", "r3m", "library", "framework", "config", "r3m.io"],
     "homepage": "https://r3m.io",
     "require" : {
         "ext-posix": "*",
