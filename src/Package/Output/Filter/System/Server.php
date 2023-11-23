@@ -39,8 +39,6 @@ class Server extends Controller {
                 $result[$record->name] = $record->options;
             }
         }
-        d($result);
-        ddd($response);
-        return $response;
+        return (object) $result;
     }
 }
