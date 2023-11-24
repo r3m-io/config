@@ -10,7 +10,6 @@
         "ext-iconv": "*",
         "ext-pdo": "*",
         "ext-pdo_mysql": "*",
-        "ext-pdo_sqlite": "*",
         "r3m_io/framework": "*",
         "doctrine/orm": "^2.8",
         "doctrine/doctrine-bundle": "^2.4",
