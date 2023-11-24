@@ -1,2 +1,2 @@
 ### Setup
-
+{{dd(config())}}

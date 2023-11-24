@@ -8,7 +8,14 @@
         "ext-posix": "*",
         "ext-zlib": "*",
         "ext-iconv": "*",
-        "r3m_io/framework": "*"
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-pdo_sqlite": "*",
+        "r3m_io/framework": "*",
+        "doctrine/orm": "^2.8",
+        "doctrine/doctrine-bundle": "^2.4",
+        "doctrine/annotations": "^1.13",
+        "doctrine/persistence": "^2.2"
     },
     "license" : "MIT",
     "authors" : [{
