@@ -1,0 +1,65 @@
+{
+    "System": {
+        "Config": {
+            "Log": {
+                "create": {
+                    "validate": {
+                        "uuid": [
+                            {
+                                "is.uuid": true
+                            }
+                        ],
+                        "name": [
+                            {
+                                "is.unique": {
+                                    "class": "System.Config.Log",
+                                    "attribute": [
+                                        "name"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "put": {
+                    "validate": {
+                        "uuid": [
+                            {
+                                "is.uuid": true
+                            }
+                        ],
+                        "name": [
+                            {
+                                "is.unique": {
+                                    "class": "System.Config.Log",
+                                    "attribute": [
+                                        "name"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "validate": {
+                        "uuid": [
+                            {
+                                "is.uuid": true
+                            }
+                        ],
+                        "name": [
+                            {
+                                "is.unique": {
+                                    "class": "System.Config.Log",
+                                    "attribute": [
+                                        "name"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
