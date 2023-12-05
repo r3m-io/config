@@ -100,7 +100,7 @@
             },
             "output": {
                 "filter":[
-                    "Package:R3m:Io:Config:Output:Filter:System:Config:log"
+                    "R3m:Io:Config:Output:Filter:System:Config:log"
                 ]
             }
         },
