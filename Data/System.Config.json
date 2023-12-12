@@ -1,0 +1,14 @@
+{
+    "System": {
+        "Config": [
+            {
+                "#class": "System.Config",
+                "service": "*",
+                "ramdisk": "*",
+                "email": "*",
+                "response": "*",
+                "framework": "*"
+            }
+        ]
+    }
+}

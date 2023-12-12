@@ -1,0 +1,43 @@
+{
+    "System": {
+        "Config": {
+            "Ramdisk": [
+                {
+                    "#class": "System.Config.Ramdisk",
+                    "file": {
+                        "extension": {
+                            "allow": [
+                                "*"
+                            ]
+                        },
+                        "size": {
+                            "max": 1048576
+                        }
+                    },
+                    "autoload": {
+                        "exclude": {
+                            "load": [
+                                "Controller\\"
+                            ],
+                            "content": [
+                                "__DIR__",
+                                "__FILE__"
+                            ]
+                        },
+                        "require": [
+                            "R3m\\Io\\Module\\Controller"
+                        ],
+                        "prefix": [
+                            "!R3m\\Io\\Module\\Compile",
+                            "R3m\\Io\\Module"
+                        ]
+                    },
+                    "parse": {
+                        "tree": true
+                    },
+                    "size": "1G"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "System": {
+    "Route": [
+      {
+        "name": "r3m-io-cli-config",
+        "path": "r3m_io\/config",
+        "controller": "Package:R3m:Io:Config:Controller:Cli:run",
+        "priority": 1001,
+        "request": {
+          "language": "en"
+        },
+        "method": [
+          "CLI"
+        ]
+      }
+    ]
+  }
+}

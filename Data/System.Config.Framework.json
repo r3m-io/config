@@ -1,0 +1,13 @@
+{
+    "System": {
+        "Config": {
+            "Framework": [
+                {
+                    "#class": "System.Config.Framework",
+                    "api": "api",
+                    "environment": "development"
+                }
+            ]
+        }
+    }
+}
