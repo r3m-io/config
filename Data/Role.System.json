@@ -1,0 +1,497 @@
+{
+  "name" : "ROLE_SYSTEM",
+  "rank" : 1,
+  "#class": "Account.Role",
+  "permission": [
+    {
+      "name": "System:Config:record",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:record.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:create",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:count",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:count.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:read",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:read.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:put",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:patch",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:page",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:page.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:list",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:list.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:rename",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:record",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:record.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:create",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:count",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:count.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:read",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:read.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:put",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:patch",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:page",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:page.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:list",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:list.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:rename",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:record",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:record.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:create",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:count",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:count.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:read",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:read.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:put",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:patch",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:page",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:page.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:list",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:list.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:rename",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:record",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:record.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:create",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:count",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:count.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:read",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:read.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:put",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:patch",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:page",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:page.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:list",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:list.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:rename",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:record",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:record.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:create",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:count",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:count.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:read",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:read.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:put",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:patch",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:page",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:page.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:list",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:list.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:rename",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:record",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:record.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:create",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:count",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:count.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:read",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:read.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:put",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:patch",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:page",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:page.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:list",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:list.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:rename",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:record",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:record.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:create",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:count",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:count.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:read",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:read.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:put",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:patch",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:page",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:page.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:list",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:list.relation",
+      "attribute": [],
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:rename",
+      "attribute": [],
+      "#class": "Account.Permission"
+    }
+  ]
+}
