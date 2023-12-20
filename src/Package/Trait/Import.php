@@ -71,7 +71,23 @@ trait Import {
         $response = $node->import($class, $node->role_system(), $options);
         $this->stats($class, $response);
         $response = $node->record($class, $node->role_system(), []);
-        ddd($response);
+        if(
+            $response &&
+            is_array($response) &&
+            array_key_exists('node', $response) &&
+            property_exists($response['node'], 'uuid')
+        ){
+            $uuid = Core::uuid();
+            $patch = (object) [
+                'uuid' => $response['node']->uuid,
+                'name' => $uuid,
+                'url' => $object->config('framework.dir.temp') . $uuid . $object->config('ds')
+            ];
+            $response = $node->patch($class, $node->role_system(), $patch, []);
+            ddd($response);
+
+        }
+
     }
 
     /**
