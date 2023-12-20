@@ -1,6 +1,6 @@
 <?php
 
-namespace Package\R3m\Io\Config\Controller;
+namespace Package\R3m\Io\Event\Controller;
 
 use R3m\Io\App;
 use R3m\Io\Config;
@@ -22,8 +22,8 @@ class Cli extends Controller {
     const DIR = __DIR__ . '/';
     const MODULE_INFO = 'Info';
     const INFO = [
-        '{{binary()}} r3m-io/config                  | Config (Object store) options',
-        '{{binary()}} r3m-io/config setup            | Config setup'
+        '{{binary()}} r3m_io/config                  | Config (Object store) options',
+        '{{binary()}} r3m_io/config setup            | Config setup'
     ];
 
     /**
@@ -31,6 +31,7 @@ class Cli extends Controller {
      * @throws Exception
      */
     public static function run(App $object){
+        /*
         $autoload = [];
         $data = new Data();
         $data->set('prefix', 'Node');
@@ -39,6 +40,7 @@ class Cli extends Controller {
         $data->clear();
         $data->set('autoload', $autoload);
         Cli::autoload($object, $data);
+        */
         $node = $object->request(0);
         $scan = Cli::scan($object);
         $module = $object->parameter($object, $node, 1);
@@ -192,6 +194,23 @@ class Cli extends Controller {
                     $object,
                     ucfirst($module)
                 );
+            }
+            $object->request('package', $node);
+            $object->request('module', $module);
+            if($submodule){
+                $object->request('submodule', $submodule);
+            }
+            if($command){
+                $object->request('command', $command);
+            }
+            if($subcommand){
+                $object->request('subcommand', $subcommand);
+            }
+            if($action){
+                $object->request('action', $action);
+            }
+            if($subaction){
+                $object->request('subaction', $subaction);
             }
             return Cli::response($object, $url);
         } catch (Exception | UrlEmptyException | UrlNotExistException | LocateException $exception){
