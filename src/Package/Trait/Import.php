@@ -70,6 +70,8 @@ trait Import {
         $node = new Node($object);
         $response = $node->import($class, $node->role_system(), $options);
         $this->stats($class, $response);
+        $response = $node->record($class, $node->role_system(), []);
+        ddd($response);
     }
 
     /**
