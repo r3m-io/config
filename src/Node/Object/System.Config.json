@@ -88,7 +88,7 @@
         },
         {
             "type": "one-one",
-            "class": "System.Framework",
+            "class": "System.Config.Framework",
             "attribute": "framework"
         },
         {
