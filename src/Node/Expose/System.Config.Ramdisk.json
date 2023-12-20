@@ -100,6 +100,55 @@
                         }
                     ]
                 },
+                "create_many": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "file",
+                                "autoload",
+                                "parse",
+                                "size",
+                                "url",
+                                "name"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "file": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "extension",
+                                            "size"
+                                        ],
+                                        "object": {
+                                            "extension": [],
+                                            "size": []
+                                        }
+                                    },
+                                    "autoload": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "exclude",
+                                            "require",
+                                            "prefix"
+                                        ],
+                                        "object": {
+                                            "exclude": []
+                                        }
+                                    },
+                                    "parse": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "tree"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
                 "list": {
                     "expose": [
                         {
@@ -247,7 +296,105 @@
                         }
                     ]
                 },
+                "patch_many": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "file",
+                                "autoload",
+                                "parse",
+                                "size",
+                                "url",
+                                "name"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "file": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "extension",
+                                            "size"
+                                        ],
+                                        "object": {
+                                            "extension": [],
+                                            "size": []
+                                        }
+                                    },
+                                    "autoload": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "exclude",
+                                            "require",
+                                            "prefix"
+                                        ],
+                                        "object": {
+                                            "exclude": []
+                                        }
+                                    },
+                                    "parse": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "tree"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
                 "put": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "file",
+                                "autoload",
+                                "parse",
+                                "size",
+                                "url",
+                                "name"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "file": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "extension",
+                                            "size"
+                                        ],
+                                        "object": {
+                                            "extension": [],
+                                            "size": []
+                                        }
+                                    },
+                                    "autoload": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "exclude",
+                                            "require",
+                                            "prefix"
+                                        ],
+                                        "object": {
+                                            "exclude": []
+                                        }
+                                    },
+                                    "parse": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "tree"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "put_many": {
                     "expose": [
                         {
                             "role": "ROLE_SYSTEM",

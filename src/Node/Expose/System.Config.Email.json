@@ -48,6 +48,29 @@
                         }
                     ]
                 },
+                "create_many": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "queue"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "queue": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "amount_per_minute",
+                                            "wait_inactive"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
                 "list": {
                     "expose": [
                         {
@@ -117,7 +140,53 @@
                         }
                     ]
                 },
+                "patch_many": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "queue"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "queue": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "amount_per_minute",
+                                            "wait_inactive"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
                 "put": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "queue"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "queue": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "amount_per_minute",
+                                            "wait_inactive"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "put_many": {
                     "expose": [
                         {
                             "role": "ROLE_SYSTEM",

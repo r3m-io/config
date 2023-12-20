@@ -3,7 +3,6 @@
         "Config": {
             "Email": [
                 {
-                    "uuid": "7f1aea0c-a312-489a-9390-fa1d6525400a",
                     "#class": "System.Config.Email",
                     "queue": {
                         "amount_per_minute": 40,

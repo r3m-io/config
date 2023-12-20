@@ -46,6 +46,28 @@
                         }
                     ]
                 },
+                "create_many": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "text\/html"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "text\/html": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "header"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
                 "list": {
                     "expose": [
                         {
@@ -112,7 +134,51 @@
                         }
                     ]
                 },
+                "patch_many": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "text\/html"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "text\/html": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "header"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
                 "put": {
+                    "expose": [
+                        {
+                            "role": "ROLE_SYSTEM",
+                            "property": [
+                                "uuid",
+                                "#class",
+                                "text\/html"
+                            ],
+                            "objects": {
+                                "object": {
+                                    "text\/html": {
+                                        "multiple": false,
+                                        "expose": [
+                                            "header"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "put_many": {
                     "expose": [
                         {
                             "role": "ROLE_SYSTEM",

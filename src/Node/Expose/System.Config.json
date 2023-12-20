@@ -41,6 +41,26 @@
                     }
                 ]
             },
+            "create_many": {
+                "expose": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "#class",
+                            "server",
+                            "service",
+                            "ramdisk",
+                            "email",
+                            "response",
+                            "autoload",
+                            "framework",
+                            "doctrine",
+                            "log"
+                        ]
+                    }
+                ]
+            },
             "list": {
                 "expose": [
                     {
@@ -101,7 +121,47 @@
                     }
                 ]
             },
+            "patch_many": {
+                "expose": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "#class",
+                            "server",
+                            "service",
+                            "ramdisk",
+                            "email",
+                            "response",
+                            "autoload",
+                            "framework",
+                            "doctrine",
+                            "log"
+                        ]
+                    }
+                ]
+            },
             "put": {
+                "expose": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "#class",
+                            "server",
+                            "service",
+                            "ramdisk",
+                            "email",
+                            "response",
+                            "autoload",
+                            "framework",
+                            "doctrine",
+                            "log"
+                        ]
+                    }
+                ]
+            },
+            "put_many": {
                 "expose": [
                     {
                         "role": "ROLE_SYSTEM",
