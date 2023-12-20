@@ -4,6 +4,10 @@
   "#class": "Account.Role",
   "permission": [
     {
+      "name": "System:Config:commit",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:import",
       "#class": "Account.Permission"
     },
@@ -76,6 +80,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Email:commit",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Email:import",
       "#class": "Account.Permission"
     },
@@ -145,6 +153,10 @@
     },
     {
       "name": "System:Config:Email:rename",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:commit",
       "#class": "Account.Permission"
     },
     {
@@ -220,6 +232,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Email:commit",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Email:import",
       "#class": "Account.Permission"
     },
@@ -289,6 +305,10 @@
     },
     {
       "name": "System:Config:Email:rename",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:commit",
       "#class": "Account.Permission"
     },
     {
@@ -364,6 +384,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Response:commit",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Response:import",
       "#class": "Account.Permission"
     },
@@ -433,6 +457,10 @@
     },
     {
       "name": "System:Config:Response:rename",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:commit",
       "#class": "Account.Permission"
     },
     {
