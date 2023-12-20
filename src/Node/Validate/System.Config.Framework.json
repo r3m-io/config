@@ -12,7 +12,7 @@
                         "#class": [
                             {
                                 "is.unique": {
-                                    "class": "System.Framework",
+                                    "class": "System.Config.Framework",
                                     "attribute": [
                                         "#class"
                                     ]
@@ -31,7 +31,7 @@
                         "#class": [
                             {
                                 "is.unique": {
-                                    "class": "System.Framework",
+                                    "class": "System.Config.Framework",
                                     "attribute": [
                                         "#class"
                                     ]
@@ -50,7 +50,7 @@
                         "#class": [
                             {
                                 "is.unique": {
-                                    "class": "System.Framework",
+                                    "class": "System.Config.Framework",
                                     "attribute": [
                                         "#class"
                                     ]
