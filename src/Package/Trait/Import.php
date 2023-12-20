@@ -97,7 +97,7 @@ trait Import {
     {
         $object = $this->object();
         $options = App::options($object);
-        $class = 'System.Config.Framework';
+        $class = 'System.Config.Service';
         $options->url = $object->config('project.dir.vendor') .
             'r3m_io/config/Data/' .
             $class .
