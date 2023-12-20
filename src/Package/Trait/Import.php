@@ -1,5 +1,5 @@
 <?php
-namespace Package\R3m\Io\Event\Trait;
+namespace Package\R3m\Io\Config\Trait;
 
 use R3m\Io\App;
 
