@@ -84,7 +84,6 @@ trait Import {
                 'url' => $object->config('framework.dir.temp') . $uuid . $object->config('ds')
             ];
             $response = $node->patch($class, $node->role_system(), $patch, []);
-            ddd($response);
         }
     }
 
