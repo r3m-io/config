@@ -1,4 +1,3 @@
-### Setup
 {{$register = Package.R3m.Io.Config:Init:register()}}
 {{if(!is.empty($register))}}
 {{Package.R3m.Io.Config:Import:role.system()}}
