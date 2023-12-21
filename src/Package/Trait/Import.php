@@ -85,9 +85,7 @@ trait Import {
             ];
             $response = $node->patch($class, $node->role_system(), $patch, []);
             ddd($response);
-
         }
-
     }
 
     /**
