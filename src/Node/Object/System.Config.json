@@ -93,14 +93,14 @@
         },
         {
             "type": "one-many",
-            "class": "System.Config.Log",
+            "class": "System.Log",
             "attribute": "log",
             "sort": {
                 "name": "ASC"
             },
             "output": {
                 "filter":[
-                    "R3m:Io:Output:Filter:System:Config:log"
+                    "R3m:Io:Output:Filter:System:log"
                 ]
             }
         },
