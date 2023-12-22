@@ -100,7 +100,7 @@
             },
             "output": {
                 "filter":[
-                    "R3m:Io:Output:Filter:System:log"
+                    "R3m:Io:Output:Filter:System:Log:output.filter"
                 ]
             }
         },
