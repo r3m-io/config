@@ -36,6 +36,14 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:delete.many",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:read",
       "#class": "Account.Permission"
     },
@@ -109,6 +117,14 @@
     },
     {
       "name": "System:Config:Email:count.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:delete.many",
       "#class": "Account.Permission"
     },
     {
@@ -188,6 +204,14 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Framework:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Framework:delete.many",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Framework:read",
       "#class": "Account.Permission"
     },
@@ -261,6 +285,14 @@
     },
     {
       "name": "System:Config:Email:count.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:delete.many",
       "#class": "Account.Permission"
     },
     {
@@ -340,6 +372,14 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Ramdisk:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Ramdisk:delete.many",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Ramdisk:read",
       "#class": "Account.Permission"
     },
@@ -416,6 +456,14 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Response:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Response:delete.many",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Response:read",
       "#class": "Account.Permission"
     },
@@ -489,6 +537,14 @@
     },
     {
       "name": "System:Config:Service:count.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:delete.many",
       "#class": "Account.Permission"
     },
     {
