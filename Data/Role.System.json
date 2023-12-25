@@ -76,6 +76,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:property.remove",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:list",
       "#class": "Account.Permission"
     },
@@ -157,6 +161,10 @@
     },
     {
       "name": "System:Config:Email:page.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:property.remove",
       "#class": "Account.Permission"
     },
     {
@@ -244,6 +252,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Framework:property.remove",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Framework:list",
       "#class": "Account.Permission"
     },
@@ -325,6 +337,10 @@
     },
     {
       "name": "System:Config:Email:page.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Email:property.remove",
       "#class": "Account.Permission"
     },
     {
@@ -412,6 +428,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Ramdisk:property.remove",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Ramdisk:list",
       "#class": "Account.Permission"
     },
@@ -496,6 +516,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:Response:property.remove",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:Response:list",
       "#class": "Account.Permission"
     },
@@ -577,6 +601,10 @@
     },
     {
       "name": "System:Config:Service:page.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:Service:property.remove",
       "#class": "Account.Permission"
     },
     {
