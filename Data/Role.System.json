@@ -76,7 +76,7 @@
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Config:property.remove",
+      "name": "System:Config:property.delete",
       "#class": "Account.Permission"
     },
     {
@@ -164,7 +164,7 @@
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Config:Email:property.remove",
+      "name": "System:Config:Email:property.delete",
       "#class": "Account.Permission"
     },
     {
@@ -252,7 +252,7 @@
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Config:Framework:property.remove",
+      "name": "System:Config:Framework:property.delete",
       "#class": "Account.Permission"
     },
     {
@@ -340,7 +340,7 @@
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Config:Email:property.remove",
+      "name": "System:Config:Email:property.delete",
       "#class": "Account.Permission"
     },
     {
@@ -428,7 +428,7 @@
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Config:Ramdisk:property.remove",
+      "name": "System:Config:Ramdisk:property.delete",
       "#class": "Account.Permission"
     },
     {
@@ -516,7 +516,7 @@
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Config:Response:property.remove",
+      "name": "System:Config:Response:property.delete",
       "#class": "Account.Permission"
     },
     {
@@ -604,7 +604,7 @@
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Config:Service:property.remove",
+      "name": "System:Config:Service:property.delete",
       "#class": "Account.Permission"
     },
     {
