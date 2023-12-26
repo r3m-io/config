@@ -17,20 +17,14 @@
                     "autoload": {
                         "exclude": {
                             "load": [
-                                "Controller\\"
+                                "Controller\\",
+                                "R3m\\Io\\Module\\Compile"
                             ],
                             "content": [
                                 "__DIR__",
                                 "__FILE__"
                             ]
-                        },
-                        "require": [
-                            "R3m\\Io\\Module\\Controller"
-                        ],
-                        "prefix": [
-                            "!R3m\\Io\\Module\\Compile",
-                            "R3m\\Io\\Module"
-                        ]
+                        }
                     },
                     "parse": {
                         "tree": true
