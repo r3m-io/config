@@ -7,7 +7,7 @@
                 "options" : {
                     "command" : [],
                     "controller" : [
-                        "Event:R3m:io:Config:Environment:set"
+                        "Event:R3m:Io:Config:Environment:set"
                     ],
                     "priority" : 10
                 }
