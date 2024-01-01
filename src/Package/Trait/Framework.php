@@ -1,10 +1,7 @@
 <?php
 namespace Package\R3m\Io\Config\Trait;
 
-use R3m\Io\App;
-
-use R3m\Io\Module\Core;
-use R3m\Io\Module\File;
+use R3m\Io\Module\Event;
 
 use R3m\Io\Node\Model\Node;
 
@@ -22,35 +19,26 @@ trait Framework {
 
         $node = new Node($object);
         $record = $node->record('System.Config.Framework', $node->role_system(), []);
-        ddd($record);
-
-
-
-
-        /*
-        if($package){
-            $options = App::options($object);
-            switch (strtolower($environment)){
-                case 'development' :
-                    ddd($options);
-                break;
-                default:
-                    ddd($options);
-                break;
-}
-        */
-            /*
-            $class = 'System.Config.Framework';
-            $options->url = $object->config('project.dir.vendor') .
-                $package . '/Data/' .
-                $class .
-                $object->config('extension.json')
-            ;
-            $node = new Node($object);
-            $response = $node->import($class, $node->role_system(), $options);
-            $node->stats($class, $response);
-
+        if(
+            $record &&
+            is_array($record) &&
+            array_key_exists('node', $record) &&
+            is_object($record['node']) &&
+            property_exists($record['node'], 'uuid')
+        ){
+            if(
+                property_exists($record['node'], 'environment') &&
+                $record['node']->environment !== $environment
+            ){
+                $patch = (object) [
+                    'uuid' => $record['node']->uuid,
+                    'environment' => $environment
+                ];
+                $node->patch('System.Config.Framework', $node->role_system(), $patch, []);
+            }
         }
-        */
+        Event::trigger($object, 'r3m.io.config.framework.environment', [
+            'environment' => $environment
+        ]);
     }
 }
