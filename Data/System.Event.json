@@ -1,0 +1,17 @@
+{
+    "System": {
+        "Event": [
+            {
+                "#class": "System.Event",
+                "action" : "r3m.io.config.framework.environment.set",
+                "options" : {
+                    "command" : [],
+                    "controller" : [
+                        "Event:R3m:io:Config:Environment:set"
+                    ],
+                    "priority" : 10
+                }
+            }
+        ]
+    }
+}
