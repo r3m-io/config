@@ -19,6 +19,15 @@ trait Framework {
     {
         $object = $this->object();
         $package = $object->request('package');
+
+        $node = new Node($object);
+        $node->record('System.Config.Framework', $node->role_system(), []);
+        ddd($node);
+
+
+
+
+        /*
         if($package){
             $options = App::options($object);
             switch (strtolower($environment)){
@@ -29,6 +38,7 @@ trait Framework {
                     ddd($options);
                 break;
 }
+        */
             /*
             $class = 'System.Config.Framework';
             $options->url = $object->config('project.dir.vendor') .
@@ -39,9 +49,8 @@ trait Framework {
             $node = new Node($object);
             $response = $node->import($class, $node->role_system(), $options);
             $node->stats($class, $response);
-            */
+
         }
-
+        */
     }
-
 }
