@@ -21,8 +21,8 @@ trait Framework {
         $package = $object->request('package');
 
         $node = new Node($object);
-        $node->record('System.Config.Framework', $node->role_system(), []);
-        ddd($node);
+        $record = $node->record('System.Config.Framework', $node->role_system(), []);
+        ddd($record);
 
 
 
