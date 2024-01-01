@@ -41,5 +41,6 @@ trait Framework {
         Event::trigger($object, 'r3m.io.config.framework.environment.set', [
             'environment' => $environment
         ]);
+        d('end');
     }
 }
