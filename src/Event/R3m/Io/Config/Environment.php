@@ -5,19 +5,10 @@ use R3m\Io\App;
 use R3m\Io\Config;
 
 use R3m\Io\Module\Core;
-use R3m\Io\Module\Database;
 use R3m\Io\Module\Dir;
-use R3m\Io\Module\File;
-use R3m\Io\Module\Parse;
-use R3m\Io\Module\Parse\Token;
-use R3m\Io\Module\Stream\Notification;
 
 use Exception;
 
-use Doctrine\ORM\Exception\ORMException;
-use Doctrine\ORM\OptimisticLockException;
-
-use R3m\Io\Exception\FileWriteException;
 use R3m\Io\Exception\ObjectException;
 
 class Environment
