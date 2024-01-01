@@ -37,7 +37,7 @@ trait Framework {
                 $node->patch('System.Config.Framework', $node->role_system(), $patch, []);
             }
         }
-        Event::trigger($object, 'r3m.io.config.framework.environment', [
+        Event::trigger($object, 'r3m.io.config.framework.environment.set', [
             'environment' => $environment
         ]);
     }
