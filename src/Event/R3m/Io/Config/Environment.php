@@ -10,6 +10,7 @@ use R3m\Io\Module\Dir;
 use Exception;
 
 use R3m\Io\Exception\ObjectException;
+use R3m\Io\Module\File;
 
 class Environment
 {
