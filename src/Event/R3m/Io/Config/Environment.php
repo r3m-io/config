@@ -21,7 +21,6 @@ class Environment
      */
     public static function set(App $object, $event, $options=[]): void
     {
-        d('yes');
         $id = $object->config(Config::POSIX_ID);
         if (!empty($id)) {
             return; //only root can execute this.
