@@ -124,11 +124,11 @@ class Environment
                     foreach($files as $file){
                         if(
                             property_exists($file, 'chmod') &&
-                            property_exists($file->chmod, 'file') &&
+                            property_exists($file, 'name') &&
                             File::exist($object->config('project.dir.root') . $file->name)
                         ){
                             $command = 'chmod ' .
-                                $file->chmod->file . ' ' .
+                                $file->chmod . ' ' .
                                 $object->config('project.dir.root') .
                                 $file->name;
                             exec($command);
