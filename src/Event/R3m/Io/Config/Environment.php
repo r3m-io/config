@@ -176,19 +176,18 @@ class Environment
             case Config::MODE_PRODUCTION:
                 $directories = $config->data($environment . '.directory');
                 $files = $config->data($environment . '.file');
-                d($directories);
-                ddd($files);
                 if(is_array($directories)){
                     foreach($directories as $directory){
                         if(
                             property_exists($directory, 'chmod') &&
                             property_exists($directory->chmod, 'file') &&
-                            property_exists($directory->chmod, 'directory')
-                        ){
-                            if(
+                            property_exists($directory->chmod, 'directory') &&
+                            Dir::is($object->config('project.dir.root') . $directory->name)
+                        ) {
+                            if (
                                 property_exists($directory, 'recursive') &&
                                 $directory->recursive === true
-                            ){
+                            ) {
                                 $command = 'chmod ' .
                                     $directory->chmod->file . ' ' .
                                     $object->config('project.dir.root') .
@@ -242,8 +241,7 @@ class Environment
                                 $command = 'chmod ' .
                                     $directory->chmod->directory . ' ' .
                                     $object->config('project.dir.root') .
-                                    $directory->name
-                                ;
+                                    $directory->name;
                                 exec($command);
                                 echo $command . PHP_EOL;
                                 $command = 'chown ' .
@@ -252,16 +250,38 @@ class Environment
                                     $directory->group .
                                     ' ' .
                                     $object->config('project.dir.root') .
-                                    $directory->name
-                                ;
+                                    $directory->name;
                                 exec($command);
                                 echo $command . PHP_EOL;
                             }
                         }
-
                     }
                 }
-
+                if(is_array($files)){
+                    foreach($files as $file){
+                        if(
+                            property_exists($file, 'chmod') &&
+                            property_exists($file, 'name') &&
+                            File::exist($object->config('project.dir.root') . $file->name)
+                        ){
+                            $command = 'chmod ' .
+                                $file->chmod . ' ' .
+                                $object->config('project.dir.root') .
+                                $file->name;
+                            exec($command);
+                            echo $command . PHP_EOL;
+                            $command = 'chown ' .
+                                $file->owner .
+                                ':' .
+                                $file->group .
+                                ' ' .
+                                $object->config('project.dir.root') .
+                                $file->name;
+                            exec($command);
+                            echo $command . PHP_EOL;
+                        }
+                    }
+                }
                 //chmod every file in application to File::CHMOD and adjust the dirs to Dir::CHMOD
             break;
         }
