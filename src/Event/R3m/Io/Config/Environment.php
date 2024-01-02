@@ -123,7 +123,7 @@ class Environment
                 }
                 if(is_array($files)){
                     foreach($files as $file){
-                        ddd($file);
+                        d($file);
                         if(
                             property_exists($file, 'chmod') &&
                             property_exists($file, 'name') &&
