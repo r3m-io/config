@@ -65,8 +65,12 @@ class Environment
             case Config::MODE_STAGING:
             case Config::MODE_TEST:
             case Config::MODE_REPLICA:
-                $directories = $config->data($environment . '.directory');
-                $files = $config->data($environment . '.file');
+                $environment_select = 'production';
+                if($environment === Config::MODE_DEVELOPMENT){
+                    $environment_select = 'development';
+                }
+                $directories = $config->data($environment_select . '.directory');
+                $files = $config->data($environment_select . '.file');
                 if(is_array($directories)){
                     foreach($directories as $directory){
                         if(
