@@ -33,7 +33,8 @@ class Environment
 
         Core::output_mode(Core::MODE_INTERACTIVE);
         $environment = $options['environment'];
-        $url = $object->config('app.config.dir') . 'Environment' . $object->config('extension.json');
+        $url = $object->config('controller.dir.data') . 'Environment' . $object->config('extension.json');
+//        $url = $object->config('app.config.dir') . 'Environment' . $object->config('extension.json');
         ddd($url);
         $config = $object->data_read($url);
         switch($environment){
