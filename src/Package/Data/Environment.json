@@ -12,6 +12,16 @@
         "recursive": true
       },
       {
+        "name": "Boot",
+        "owner": "root",
+        "group": "root",
+        "chmod": {
+          "file": 640,
+          "directory": 750
+        },
+        "recursive": true
+      },
+      {
         "name": "Data",
         "owner": "www-data",
         "group": "www-data",
@@ -19,7 +29,7 @@
           "file": 640,
           "directory": 750
         },
-        "recursive": false
+        "recursive": true
       },
       {
         "name": "Docker",
@@ -32,27 +42,17 @@
         "recursive": true
       },
       {
+        "name": "Domain",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 640,
+          "directory": 750
+        },
+        "recursive": true
+      },
+      {
         "name": "Event",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Filter",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Host",
         "owner": "www-data",
         "group": "www-data",
         "chmod": {
@@ -72,7 +72,7 @@
         "recursive": true
       },
       {
-        "name": "Mount",
+        "name": "Middleware",
         "owner": "www-data",
         "group": "www-data",
         "chmod": {
@@ -83,6 +83,36 @@
       },
       {
         "name": "Node",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 640,
+          "directory": 750
+        },
+        "recursive": true
+      },
+      {
+        "name": "Output",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 640,
+          "directory": 750
+        },
+        "recursive": true
+      },
+      {
+        "name": "Package",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 640,
+          "directory": 750
+        },
+        "recursive": true
+      },
+      {
+        "name": "Mount",
         "owner": "www-data",
         "group": "www-data",
         "chmod": {
@@ -140,12 +170,6 @@
         "chmod": 640
       },
       {
-        "name": "apache.sh",
-        "owner": "root",
-        "group": "root",
-        "chmod": 750
-      },
-      {
         "name": "commit.sh",
         "owner": "root",
         "group": "root",
@@ -158,221 +182,25 @@
         "chmod": 750
       },
       {
-        "name": "install.sh",
+        "name": "install.dev.sh",
         "owner": "root",
         "group": "root",
         "chmod": 750
       },
       {
-        "name": "reinstall.sh",
+        "name": "install.prod.sh",
         "owner": "root",
         "group": "root",
         "chmod": 750
       },
       {
-        "name": "start.sh",
-        "owner": "root",
-        "group": "root",
-        "chmod": 640
-      },
-      {
-        "name": "composer.json",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": 640
-      },
-      {
-        "name": "composer.lock",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": 640
-      },
-      {
-        "name": "README.md",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": 640
-      },
-      {
-        "name": "docker-compose.dev.yml",
-        "owner": "root",
-        "group": "root",
-        "chmod": 640
-      },
-      {
-        "name": "docker-compose.prod.yml",
-        "owner": "root",
-        "group": "root",
-        "chmod": 640
-      }
-    ]
-  },
-  "staging": {
-    "directory": [
-      {
-        "name": "Bin",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Data",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": false
-      },
-      {
-        "name": "Docker",
-        "owner": "root",
-        "group": "root",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Event",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Filter",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Host",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Log",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Mount",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Node",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Plugin",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "Public",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "src",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      },
-      {
-        "name": "vendor",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 640,
-          "directory": 750
-        },
-        "recursive": true
-      }
-    ],
-    "file": [
-      {
-        "name": ".gitignore",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": 640
-      },
-      {
-        "name": "apache.sh",
+        "name": "reinstall.dev.sh",
         "owner": "root",
         "group": "root",
         "chmod": 750
       },
       {
-        "name": "commit.sh",
-        "owner": "root",
-        "group": "root",
-        "chmod": 750
-      },
-      {
-        "name": "enter.sh",
-        "owner": "root",
-        "group": "root",
-        "chmod": 750
-      },
-      {
-        "name": "install.sh",
-        "owner": "root",
-        "group": "root",
-        "chmod": 750
-      },
-      {
-        "name": "reinstall.sh",
+        "name": "reinstall.prod.sh",
         "owner": "root",
         "group": "root",
         "chmod": 750
@@ -414,10 +242,16 @@
         "chmod": 640
       },
       {
-        "name": "Data/App/Secret.json",
+        "name": "Log/apache2_access.log",
         "owner": "root",
         "group": "root",
-        "chmod": 640
+        "chmod": 644
+      },
+      {
+        "name": "Log/apache2_error.log",
+        "owner": "root",
+        "group": "root",
+        "chmod": 644
       }
     ]
   },
@@ -428,8 +262,18 @@
         "owner": "www-data",
         "group": "www-data",
         "chmod": {
-          "file": 640,
-          "directory": 750
+          "file": 666,
+          "directory": 777
+        },
+        "recursive": true
+      },
+      {
+        "name": "Boot",
+        "owner": "root",
+        "group": "root",
+        "chmod": {
+          "file": 666,
+          "directory": 777
         },
         "recursive": true
       },
@@ -441,7 +285,7 @@
           "file": 666,
           "directory": 777
         },
-        "recursive": false
+        "recursive": true
       },
       {
         "name": "Docker",
@@ -454,27 +298,17 @@
         "recursive": true
       },
       {
+        "name": "Domain",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 666,
+          "directory": 777
+        },
+        "recursive": true
+      },
+      {
         "name": "Event",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 666,
-          "directory": 777
-        },
-        "recursive": true
-      },
-      {
-        "name": "Filter",
-        "owner": "www-data",
-        "group": "www-data",
-        "chmod": {
-          "file": 666,
-          "directory": 777
-        },
-        "recursive": true
-      },
-      {
-        "name": "Host",
         "owner": "www-data",
         "group": "www-data",
         "chmod": {
@@ -494,7 +328,7 @@
         "recursive": true
       },
       {
-        "name": "Mount",
+        "name": "Middleware",
         "owner": "www-data",
         "group": "www-data",
         "chmod": {
@@ -505,6 +339,36 @@
       },
       {
         "name": "Node",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 666,
+          "directory": 777
+        },
+        "recursive": true
+      },
+      {
+        "name": "Output",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 666,
+          "directory": 777
+        },
+        "recursive": true
+      },
+      {
+        "name": "Package",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 666,
+          "directory": 777
+        },
+        "recursive": true
+      },
+      {
+        "name": "Mount",
         "owner": "www-data",
         "group": "www-data",
         "chmod": {
@@ -562,76 +426,88 @@
         "chmod": 666
       },
       {
-        "name": "apache.sh",
-        "owner": "root",
-        "group": "root",
-        "chmod": 774
-      },
-      {
         "name": "commit.sh",
         "owner": "root",
         "group": "root",
-        "chmod": 774
+        "chmod": 777
       },
       {
         "name": "enter.sh",
         "owner": "root",
         "group": "root",
-        "chmod": 774
+        "chmod": 777
       },
       {
-        "name": "install.sh",
+        "name": "install.dev.sh",
         "owner": "root",
         "group": "root",
-        "chmod": 774
+        "chmod": 777
       },
       {
-        "name": "reinstall.sh",
+        "name": "install.prod.sh",
         "owner": "root",
         "group": "root",
-        "chmod": 774
+        "chmod": 777
+      },
+      {
+        "name": "reinstall.dev.sh",
+        "owner": "root",
+        "group": "root",
+        "chmod": 777
+      },
+      {
+        "name": "reinstall.prod.sh",
+        "owner": "root",
+        "group": "root",
+        "chmod": 777
       },
       {
         "name": "start.sh",
         "owner": "root",
         "group": "root",
-        "chmod": 666
+        "chmod": 777
       },
       {
         "name": "composer.json",
         "owner": "www-data",
         "group": "www-data",
-        "chmod": 666
+        "chmod": 777
       },
       {
         "name": "composer.lock",
         "owner": "www-data",
         "group": "www-data",
-        "chmod": 666
+        "chmod": 777
       },
       {
         "name": "README.md",
         "owner": "www-data",
         "group": "www-data",
-        "chmod": 666
+        "chmod": 777
       },
       {
         "name": "docker-compose.dev.yml",
         "owner": "root",
         "group": "root",
-        "chmod": 666
+        "chmod": 777
       },
       {
         "name": "docker-compose.prod.yml",
         "owner": "root",
         "group": "root",
-        "chmod": 666
+        "chmod": 777
       },
       {
-        "name": "Data/App/Secret.json",
+        "name": "Log/apache2_access.log",
         "owner": "root",
         "group": "root",
-        "chmod": 640
+        "chmod": 777
+      },
+      {
+        "name": "Log/apache2_error.log",
+        "owner": "root",
+        "group": "root",
+        "chmod": 777
       }
     ]
   }

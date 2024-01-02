@@ -39,14 +39,13 @@ class Environment
             case Config::MODE_DEVELOPMENT:
                 $directories = $config->data($environment . '.directory');
                 $files = $config->data($environment . '.file');
-                d($directories);
-                ddd($files);
                 if(is_array($directories)){
                     foreach($directories as $directory){
                         if(
                             property_exists($directory, 'chmod') &&
                             property_exists($directory->chmod, 'file') &&
-                            property_exists($directory->chmod, 'directory')
+                            property_exists($directory->chmod, 'directory') &&
+                            Dir::is($object->config('project.dir.root') . $directory->name)
                         ) {
                             if (
                                 property_exists($directory, 'recursive') &&
@@ -118,6 +117,31 @@ class Environment
                                 exec($command);
                                 echo $command . PHP_EOL;
                             }
+                        }
+                    }
+                }
+                if(is_array($files)){
+                    foreach($files as $file){
+                        if(
+                            property_exists($file, 'chmod') &&
+                            property_exists($file->chmod, 'file') &&
+                            File::exist($object->config('project.dir.root') . $file->name)
+                        ){
+                            $command = 'chmod ' .
+                                $file->chmod->file . ' ' .
+                                $object->config('project.dir.root') .
+                                $file->name;
+                            exec($command);
+                            echo $command . PHP_EOL;
+                            $command = 'chown ' .
+                                $file->owner .
+                                ':' .
+                                $file->group .
+                                ' ' .
+                                $object->config('project.dir.root') .
+                                $file->name;
+                            exec($command);
+                            echo $command . PHP_EOL;
                         }
                     }
                 }
