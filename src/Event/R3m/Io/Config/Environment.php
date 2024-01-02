@@ -20,7 +20,6 @@ class Environment
      */
     public static function set(App $object, $event, $options=[]): void
     {
-        d('yes');
         $id = $object->config(Config::POSIX_ID);
         if (!empty($id)) {
             return; //only root can execute this.
@@ -34,13 +33,14 @@ class Environment
         Core::output_mode(Core::MODE_INTERACTIVE);
         $environment = $options['environment'];
         $url = $object->config('controller.dir.data') . 'Environment' . $object->config('extension.json');
-//        $url = $object->config('app.config.dir') . 'Environment' . $object->config('extension.json');
-        ddd($url);
+        d($url);
         $config = $object->data_read($url);
         switch($environment){
             case Config::MODE_DEVELOPMENT:
                 $directories = $config->data($environment . '.directory');
                 $files = $config->data($environment . '.file');
+                d($directories);
+                ddd($files);
                 if(is_array($directories)){
                     foreach($directories as $directory){
                         if(
@@ -129,6 +129,8 @@ class Environment
             case Config::MODE_PRODUCTION:
                 $directories = $config->data($environment . '.directory');
                 $files = $config->data($environment . '.file');
+                d($directories);
+                ddd($files);
                 if(is_array($directories)){
                     foreach($directories as $directory){
                         if(
