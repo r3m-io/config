@@ -242,13 +242,13 @@
         "chmod": 640
       },
       {
-        "name": "Log/apache2_access.log",
+        "name": "Log/apache_access.log",
         "owner": "root",
         "group": "root",
         "chmod": 644
       },
       {
-        "name": "Log/apache2_error.log",
+        "name": "Log/apache_error.log",
         "owner": "root",
         "group": "root",
         "chmod": 644
