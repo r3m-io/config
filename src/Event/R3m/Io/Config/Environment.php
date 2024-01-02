@@ -30,11 +30,33 @@ class Environment
         }
         $app_flags = App::flags($object);
         $app_options = App::options($object);
-
+        $enable = false;
+        if(
+            in_array($options['environment'], [
+                Config::MODE_PRODUCTION,
+                Config::MODE_STAGING,
+                Config::MODE_TEST,
+                Config::MODE_REPLICA
+            ], true)
+        ){
+            $enable = true;
+            if(property_exists($app_options, 'disable-file-permission')){
+                $enable = false;
+            }
+        }
+        elseif(
+            $options['environment'] === Config::MODE_DEVELOPMENT &&
+            property_exists($app_options, 'enable-file-permission') &&
+            $app_options->{'enable-file-permission'} === true
+        ){
+            $enable = true;
+        }
+        if($enable === false){
+            return;
+        }
         Core::output_mode(Core::MODE_INTERACTIVE);
         $environment = $options['environment'];
         $url = $object->config('controller.dir.data') . 'Environment' . $object->config('extension.json');
-        d($url);
         $config = $object->data_read($url);
         switch($environment){
             case Config::MODE_DEVELOPMENT:
@@ -123,7 +145,6 @@ class Environment
                 }
                 if(is_array($files)){
                     foreach($files as $file){
-                        d($file);
                         if(
                             property_exists($file, 'chmod') &&
                             property_exists($file, 'name') &&
