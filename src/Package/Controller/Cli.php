@@ -23,7 +23,8 @@ class Cli extends Controller {
     const MODULE_INFO = 'Info';
     const INFO = [
         '{{binary()}} r3m_io/config                  | Config (Object store) options',
-        '{{binary()}} r3m_io/config setup            | Config setup'
+        '{{binary()}} r3m_io/config setup            | Config setup',
+        '{{binary()}} r3m_io/config framework ...    | environment <environment>'
     ];
 
     /**
