@@ -4,6 +4,10 @@
   "#class": "Account.Role",
   "permission": [
     {
+      "name": "System:Event:import",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:commit",
       "#class": "Account.Permission"
     },
