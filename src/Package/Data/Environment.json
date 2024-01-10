@@ -160,6 +160,16 @@
           "directory": 750
         },
         "recursive": true
+      },
+      {
+        "name": "vendor\/bin",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 750,
+          "directory": 750
+        },
+        "recursive": true
       }
     ],
     "file": [
@@ -413,6 +423,16 @@
         "group": "www-data",
         "chmod": {
           "file": 666,
+          "directory": 777
+        },
+        "recursive": true
+      },
+      {
+        "name": "vendor\/bin",
+        "owner": "www-data",
+        "group": "www-data",
+        "chmod": {
+          "file": 777,
           "directory": 777
         },
         "recursive": true
