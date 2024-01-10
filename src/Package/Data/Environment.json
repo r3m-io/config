@@ -465,7 +465,7 @@
         "name": "start.sh",
         "owner": "root",
         "group": "root",
-        "chmod": 777
+        "chmod": 666
       },
       {
         "name": "composer.json",
