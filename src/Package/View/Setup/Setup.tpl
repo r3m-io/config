@@ -2,7 +2,6 @@
 {{$register = Package.R3m.Io.Config:Init:register()}}
 {{if(!is.empty($register))}}
 {{Package.R3m.Io.Config:Import:role.system()}}
-{{Package.R3m.Io.Config:Import:config.email()}}
 {{Package.R3m.Io.Config:Import:config.framework()}}
 {{Package.R3m.Io.Config:Import:config.ramdisk()}}
 {{Package.R3m.Io.Config:Import:config.response()}}

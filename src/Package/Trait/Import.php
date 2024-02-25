@@ -24,28 +24,6 @@ trait Import {
     /**
      * @throws Exception
      */
-    public function config_email(): void
-    {
-        $object = $this->object();
-        $package = $object->request('package');
-        if($package){
-            $options = App::options($object);
-            $class = 'System.Config.Email';
-            $options->url = $object->config('project.dir.vendor') .
-                $package . '/Data/' .
-                $class .
-                $object->config('extension.json')
-            ;
-            $node = new Node($object);
-            $response = $node->import($class, $node->role_system(), $options);
-            $node->stats($class, $response);
-        }
-
-    }
-
-    /**
-     * @throws Exception
-     */
     public function config_framework(): void
     {
         $object = $this->object();
