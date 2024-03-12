@@ -3,7 +3,7 @@
         "Config": {
             "Service": {
                 "count": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -16,13 +16,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -33,7 +33,7 @@
                     ]
                 },
                 "create": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -46,13 +46,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -63,7 +63,7 @@
                     ]
                 },
                 "create_many": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -76,13 +76,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -93,7 +93,7 @@
                     ]
                 },
                 "list": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -106,13 +106,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -123,7 +123,7 @@
                     ]
                 },
                 "page": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -136,13 +136,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -153,7 +153,7 @@
                     ]
                 },
                 "patch": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -166,13 +166,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -183,7 +183,7 @@
                     ]
                 },
                 "patch_many": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -196,13 +196,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -213,7 +213,7 @@
                     ]
                 },
                 "put": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -226,13 +226,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -243,7 +243,7 @@
                     ]
                 },
                 "put_many": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -256,13 +256,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -273,7 +273,7 @@
                     ]
                 },
                 "read": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -286,13 +286,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
@@ -303,7 +303,7 @@
                     ]
                 },
                 "record": {
-                    "expose": [
+                    "output": [
                         {
                             "role": "ROLE_SYSTEM",
                             "property": [
@@ -316,13 +316,13 @@
                                 "object": {
                                     "git": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "command"
                                         ]
                                     },
                                     "cron": {
                                         "multiple": false,
-                                        "expose": [
+                                        "output": [
                                             "start",
                                             "restart"
                                         ]
