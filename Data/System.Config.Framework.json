@@ -5,6 +5,7 @@
                 {
                     "#class": "System.Config.Framework",
                     "api": "api",
+                    "mode": "FrankenPhp",
                     "environment": "development"
                 }
             ]
