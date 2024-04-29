@@ -5,7 +5,7 @@
                 {
                     "#class": "System.Config.Framework",
                     "api": "api",
-                    "mode": "FrankenPhp",
+                    "mode": "Apache2",
                     "environment": "development"
                 }
             ]
