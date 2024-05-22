@@ -28,7 +28,7 @@
                         "property": [
                             {
                                 "name": "max",
-                                "type": "int"
+                                "type": "integer"
                             }
                         ],
                         "multiple": false
