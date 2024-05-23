@@ -30,20 +30,6 @@
                         }
                     ]
                 },
-                "create_many": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "api",
-                                "environment",
-                                "mode"
-                            ]
-                        }
-                    ]
-                },
                 "list": {
                     "output": [
                         {
@@ -86,35 +72,7 @@
                         }
                     ]
                 },
-                "patch_many": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "api",
-                                "environment",
-                                "mode"
-                            ]
-                        }
-                    ]
-                },
                 "put": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "api",
-                                "environment",
-                                "mode"
-                            ]
-                        }
-                    ]
-                },
-                "put_many": {
                     "output": [
                         {
                             "role": "ROLE_SYSTEM",

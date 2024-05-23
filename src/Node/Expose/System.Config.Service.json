@@ -62,36 +62,6 @@
                         }
                     ]
                 },
-                "create_many": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "git",
-                                "cron"
-                            ],
-                            "objects": {
-                                "object": {
-                                    "git": {
-                                        "multiple": false,
-                                        "output": [
-                                            "command"
-                                        ]
-                                    },
-                                    "cron": {
-                                        "multiple": false,
-                                        "output": [
-                                            "start",
-                                            "restart"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
                 "list": {
                     "output": [
                         {
@@ -182,67 +152,7 @@
                         }
                     ]
                 },
-                "patch_many": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "git",
-                                "cron"
-                            ],
-                            "objects": {
-                                "object": {
-                                    "git": {
-                                        "multiple": false,
-                                        "output": [
-                                            "command"
-                                        ]
-                                    },
-                                    "cron": {
-                                        "multiple": false,
-                                        "output": [
-                                            "start",
-                                            "restart"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
                 "put": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "git",
-                                "cron"
-                            ],
-                            "objects": {
-                                "object": {
-                                    "git": {
-                                        "multiple": false,
-                                        "output": [
-                                            "command"
-                                        ]
-                                    },
-                                    "cron": {
-                                        "multiple": false,
-                                        "output": [
-                                            "start",
-                                            "restart"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
-                "put_many": {
                     "output": [
                         {
                             "role": "ROLE_SYSTEM",

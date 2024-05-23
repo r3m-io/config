@@ -46,28 +46,6 @@
                         }
                     ]
                 },
-                "create_many": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "text\/html"
-                            ],
-                            "objects": {
-                                "object": {
-                                    "text\/html": {
-                                        "multiple": false,
-                                        "output": [
-                                            "header"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
                 "list": {
                     "output": [
                         {
@@ -134,51 +112,7 @@
                         }
                     ]
                 },
-                "patch_many": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "text\/html"
-                            ],
-                            "objects": {
-                                "object": {
-                                    "text\/html": {
-                                        "multiple": false,
-                                        "output": [
-                                            "header"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
                 "put": {
-                    "output": [
-                        {
-                            "role": "ROLE_SYSTEM",
-                            "property": [
-                                "uuid",
-                                "#class",
-                                "text\/html"
-                            ],
-                            "objects": {
-                                "object": {
-                                    "text\/html": {
-                                        "multiple": false,
-                                        "output": [
-                                            "header"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
-                "put_many": {
                     "output": [
                         {
                             "role": "ROLE_SYSTEM",

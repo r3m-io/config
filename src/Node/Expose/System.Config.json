@@ -41,26 +41,6 @@
                     }
                 ]
             },
-            "create_many": {
-                "output": [
-                    {
-                        "role": "ROLE_SYSTEM",
-                        "property": [
-                            "uuid",
-                            "#class",
-                            "server",
-                            "service",
-                            "ramdisk",
-                            "email",
-                            "response",
-                            "autoload",
-                            "framework",
-                            "doctrine",
-                            "log"
-                        ]
-                    }
-                ]
-            },
             "list": {
                 "output": [
                     {
@@ -121,47 +101,7 @@
                     }
                 ]
             },
-            "patch_many": {
-                "output": [
-                    {
-                        "role": "ROLE_SYSTEM",
-                        "property": [
-                            "uuid",
-                            "#class",
-                            "server",
-                            "service",
-                            "ramdisk",
-                            "email",
-                            "response",
-                            "autoload",
-                            "framework",
-                            "doctrine",
-                            "log"
-                        ]
-                    }
-                ]
-            },
             "put": {
-                "output": [
-                    {
-                        "role": "ROLE_SYSTEM",
-                        "property": [
-                            "uuid",
-                            "#class",
-                            "server",
-                            "service",
-                            "ramdisk",
-                            "email",
-                            "response",
-                            "autoload",
-                            "framework",
-                            "doctrine",
-                            "log"
-                        ]
-                    }
-                ]
-            },
-            "put_many": {
                 "output": [
                     {
                         "role": "ROLE_SYSTEM",
