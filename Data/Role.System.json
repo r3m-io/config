@@ -20,6 +20,10 @@
       "#class": "Account.Permission"
     },
     {
+      "name": "System:Config:record.parse",
+      "#class": "Account.Permission"
+    },
+    {
       "name": "System:Config:create",
       "#class": "Account.Permission"
     },
@@ -49,6 +53,10 @@
     },
     {
       "name": "System:Config:read.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:read.parse",
       "#class": "Account.Permission"
     },
     {
@@ -85,6 +93,10 @@
     },
     {
       "name": "System:Config:list.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Config:list.parse",
       "#class": "Account.Permission"
     },
     {
